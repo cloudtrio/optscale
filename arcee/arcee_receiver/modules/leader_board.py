@@ -1,6 +1,7 @@
 from enum import Enum
 from sanic.exceptions import SanicException
 from sanic.log import logger
+from log import logger
 
 
 aggregate_func_map = {
