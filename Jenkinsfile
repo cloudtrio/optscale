@@ -11,10 +11,13 @@ pipeline {
     
     stages {
         stage('Checkout') {
-            steps {
-                git branch: 'integration', 
-                    credentialsId: '171313d1-2912-4653-bcaf-eb48b5954e4d', 
-                    url: 'https://github.com/cloudtrio/optscale.git'
+    steps {
+       git branch: 'integration', 
+            credentialsId: '171313d1-2912-4653-bcaf-eb48b5954e4d', 
+            url: 'https://github.com/cloudtrio/optscale.git'
+    }
+}
+
             }
         }
         
