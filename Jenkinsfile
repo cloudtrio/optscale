@@ -3,7 +3,7 @@ node {
     checkout scm
   }
   stage('SonarQube Analysis') {
-    def scannerHome = tool name: 'SonarScanner', type: 'hudson.plugins.sonar.SonarRunnerInstallation'
+    def scannerHome = tool 'SonarScanner'
     withSonarQubeEnv('Sonarqubeserver') {
       sh "${scannerHome}/bin/sonar-scanner"
     }
