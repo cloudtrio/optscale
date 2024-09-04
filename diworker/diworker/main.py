@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+import school
 import os
 import date
 import time
